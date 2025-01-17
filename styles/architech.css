@@ -22,6 +22,16 @@
   .light-clr-2{
     color: rgb(114, 114, 114);
   }
+  .fact-number{
+    font-size: 3rem;
+    margin: 0;
+    padding: 0;
+  }
+  .fact-name{
+    color: rgb(114, 114, 114);
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
   .btn-bg-fntsz{
     border-radius: 8px;
     background: rgb(255, 144, 14);
@@ -100,15 +110,33 @@
     margin-left: 130px;
     max-width: 537px;
   }
-  .feture-title{
+  .section-title{
     font-size: 3rem;
     font-weight: 700;
+    margin-bottom: 24px;
   }
   #style-feature{
     color: rgb(255, 144, 14);
   }
   #style-our{
     font-weight: 900;
+  }
+  .sesction-description{
+    max-width: 542px;
+  }
+  .fact-card {
+    border: 1px solid rgb(255, 144, 14);
+    border-radius: 8px;
+    width:200px ;
+    height: 200px;
+    text-align: center;
+    padding-top: 40px;
+
+  }
+  .fact-container{
+    margin-top: 54px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   /* responsive for mediam device */
@@ -118,14 +146,29 @@
   .nav-links, .teams{
     flex-direction: column;
   }
+  
   .team-image-container{
     margin-top: 80px;
-    grid-template-columns: repeat(1, 100%);
+    grid-template-columns: repeat(1, 1fr);
   }
   .our-fetures{
     margin-left: 20px;
     text-align: center;
   }
+  .brand{
+    margin-left: 20px;
+  }
+  .fact-card{
+    margin: auto;
+  }
+  .fact-container{
+    grid-template-columns: repeat(1, 2fr);
+    gap: 20px;
+  }
+  .fact-sections{
+    text-align: center;
+  }
+
 }
 
 @media screen and (min-width:576px) and (max-width:992px) {
@@ -134,43 +177,22 @@
     flex-direction: column;
   }
   .team-image-container{
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 0.5fr);
+    margin: auto;
   }
   .our-fetures{
     text-align: center;
     margin-left: 50px;
   }
+  .fact-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  .fact-card{
+    margin-left:25px ;
+  }
+  .section-title, .sesction-description{
+    margin: 25px;
+  }
 
 }
-
-/* 
-
-*{
-  margin: 0;
-  padding: 0;
-}
-.navbar{
-  flex-direction: column;
-  gap: 20px;
-}
-.nav-links{
-  gap: 40px;
-  padding-left: 40px;
-  flex-direction: column;
-}
-.banner-content{
-  width: 100%;
-  padding: 0 auto;
-}
-.brand{
-  margin-top: 20px;
-  font-size: 2rem;
-  margin-left: 34px;
-}
-.title{
-  margin-top: 25px;
-  font-size: 2rem;
-}
-.text-content{
-  padding: 30px 20px 0 20px;
-} */
